@@ -19,3 +19,17 @@
     VERSION_CODENAME=xenial
     UBUNTU_CODENAME=xenial
     ```
+2. ```./python -m test test_idle```
+    ```
+    [dio@dio-VirtualBox][cpython][2] $ ./python -m test test_idle
+    Run tests sequentially
+    0:00:00 load avg: 0.23 [1/1] test_idle
+    test_idle skipped -- No module named '_tkinter'
+    test_idle skipped
+
+    1 test skipped:
+        test_idle
+
+    Total duration: 66 ms
+    Tests result: SUCCESS
+    ```
