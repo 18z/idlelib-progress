@@ -33,3 +33,38 @@
     Total duration: 66 ms
     Tests result: SUCCESS
     ```
+
+3. 解決 2. 的方法，就是參考 [build-dependency](https://docs.python.org/devguide/setup.html#build-dependencies)
+    ```
+    Python build finished successfully!
+    The necessary bits to build these optional modules were not found:
+    _uuid                                                          
+    To find the necessary bits, look in setup.py in detect_modules() for the module's name.
+
+
+    The following modules found by detect_modules() in setup.py, have been
+    built by the Makefile instead, as configured by the Setup files:
+    atexit                pwd                   time               
+
+    running build_scripts
+    copying and adjusting /home/dio/Documents/cpython/Tools/scripts/pydoc3 -> build/scripts-3.7
+    copying and adjusting /home/dio/Documents/cpython/Tools/scripts/idle3 -> build/scripts-3.7
+    copying and adjusting /home/dio/Documents/cpython/Tools/scripts/2to3 -> build/scripts-3.7
+    copying and adjusting /home/dio/Documents/cpython/Tools/scripts/pyvenv -> build/scripts-3.7
+    changing mode of build/scripts-3.7/pydoc3 from 664 to 775
+    changing mode of build/scripts-3.7/idle3 from 664 to 775
+    changing mode of build/scripts-3.7/2to3 from 664 to 775
+    changing mode of build/scripts-3.7/pyvenv from 664 to 775
+    renaming build/scripts-3.7/pydoc3 to build/scripts-3.7/pydoc3.7
+    renaming build/scripts-3.7/idle3 to build/scripts-3.7/idle3.7
+    renaming build/scripts-3.7/2to3 to build/scripts-3.7/2to3-3.7
+    renaming build/scripts-3.7/pyvenv to build/scripts-3.7/pyvenv-3.7
+    [dio@dio-VirtualBox][cpython][0] $ ./python -m test test_idle
+    Run tests sequentially
+    0:00:00 load avg: 2.47 [1/1] test_idle
+    1 test OK.
+
+    Total duration: 1 sec
+    Tests result: SUCCESS
+
+    ```
