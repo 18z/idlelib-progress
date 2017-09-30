@@ -78,3 +78,5 @@
 5. fire up idle ```/home/dio/Documents/cpython/python __main__.py```
 
 6. fire up idle ```cpython -m idlelib```
+
+7. config.py 有 main function。main function 功能是跑 test。所以打算從 test_config 下手。
