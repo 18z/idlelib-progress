@@ -82,3 +82,5 @@
 7. config.py 有 main function。main function 功能是跑 test。所以打算從 test_config 下手。
 
 8. test_config line 32 為切入點，-> line 23 -> config.py.line.784 -> config.py.line.152
+
+9. idlelib.testing = True, testing 值藏在 idlelib/__init__.py 中。
