@@ -76,3 +76,5 @@
     OK (skipped=1)
     ```
 5. fire up idle ```/home/dio/Documents/cpython/python __main__.py```
+
+6. fire up idle ```cpython -m idlelib```
