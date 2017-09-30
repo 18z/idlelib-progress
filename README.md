@@ -86,3 +86,6 @@
 9. idlelib.testing = True, testing 值藏在 idlelib/__init__.py 中。
 
 10. 接續 8. 可開始先看 IdleConfParser 的 test。 test_config.py.line.40。
+
+11. test_config.py.line.57 表示 config 值。test_config.py.line.56 表示 import 進來的 config module。
+
