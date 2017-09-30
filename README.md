@@ -89,3 +89,4 @@
 
 11. test_config.py.line.57 表示 config 值。test_config.py.line.56 表示 import 進來的 config module。
 
+12. 看懂 test_config.py.IdleConfParserTest.test_get() 拉～。:fireworks:
