@@ -92,3 +92,5 @@
 12. 看懂 test_config.py.IdleConfParserTest.test_get() 拉～。:fireworks:
 
 13. config.py test 似乎都被寫完了QQ
+
+14. /home/dio/Documents/cpython/python test_config.py 這樣也可以跑測試。
