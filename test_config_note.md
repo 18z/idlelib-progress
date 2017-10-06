@@ -25,4 +25,17 @@
     
     感覺是初始化一個 config.IdleUserConfParser() 的 instance 給 testcfg['main'] 與 usermain。
     但為何要這樣做，目前尚不知。
+    
+* line 623
+    usermain.read_string('''
+        [Theme]
+        default = True
+        ''')
+    
+    可以理解。使用 configparser 的函式讀取 config 內容。
+    
+* line 630
+    usermain['Theme']['name'] = 'IDLE New'
+    
+    這一行要找時間理解。
 ```
