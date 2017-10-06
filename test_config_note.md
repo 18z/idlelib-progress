@@ -38,4 +38,9 @@
     usermain['Theme']['name'] = 'IDLE New'
     
     這一行要找時間理解。
+    直接寫一個簡單的 configparser 讀取程式，測試是否可以這樣用？
+    找到預設的 userconfig？
+    
+    config.py line 385
+    有講 default config settings.
 ```
