@@ -14,4 +14,15 @@
     idleConf instance 中 userCfg 為 IdleConf class 裡 __init__ 的值。
     在 config.py 中 line 166 可看到，該值的型態為 dictionary。
     所以 usercfg 在此處就是一個 dictionary。
+    
+* line 25
+    testcfg = {}
+    
+    宣告了一個為字典形態的 testcfg
+    
+* line 26
+    usermain = testcfg['main'] = config.IdleUserConfParser('')
+    
+    感覺是初始化一個 config.IdleUserConfParser() 的 instance 給 testcfg['main'] 與 usermain。
+    但為何要這樣做，目前尚不知。
 ```
