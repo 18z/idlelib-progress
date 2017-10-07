@@ -43,4 +43,15 @@
     
     config.py line 385
     有講 default config settings.
+    
+* config.py line 80
+    IdleUserConfParser 繼承自 IdleConfParser 繼承自 ConfigParser
+    
+* config.py line 191, 192
+    IdleConf 裡會用到 IdleConfParser 與 IdleUserParser 爬設定檔資料
+    
+* line 26
+    usermain = testcfg['main'] = config.IdleUserConfParser('') 
+    
+    在 config.py 中 line 48 中說明如果為測試使用則就用 '' 
 ```
