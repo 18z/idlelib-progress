@@ -75,4 +75,7 @@ print(cp.get('Theme', 'name'))
 
 * line 26 ~ 29
     testcfg 的設計是為了後面可以使用迴圈將值帶入 cfgtype 中。
+    
+* line 32
+    idleConf.userCfg = testcfg (待理解)
 ```
