@@ -56,6 +56,7 @@
     在 config.py 中 line 48 中說明如果為測試使用則就用 '' 
     
 * 以下程式碼解決了 line 630 的問題，記得要用 cpython 執行。
+    可以幫 config 加欄位加值。
 ---------------------------------------------------------------
 from configparser import ConfigParser
 
