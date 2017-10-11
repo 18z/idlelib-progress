@@ -1,4 +1,4 @@
-```
+```python
 * line 23 為切入點
     idleConf = config.idleConf
         
