@@ -78,4 +78,10 @@ print(cp.get('Theme', 'name'))
     
 * line 32
     idleConf.userCfg = testcfg (待理解)
+
+* line 36
+    idleConf.userCfg = usercfg 
+    
+    setUpModule (testcfg) 與 tearDownModule (usercfg) 
+    測試時，換成 testcfg，測試結束後，換回 usercfg。但似乎意義不大？
 ```
