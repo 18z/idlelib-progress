@@ -84,4 +84,26 @@ print(cp.get('Theme', 'name'))
     
     setUpModule (testcfg) 與 tearDownModule (usercfg) 
     測試時，換成 testcfg，測試結束後，換回 usercfg。但似乎意義不大？
+    
+* line 44 為 section, line 45 的 one 為 option。
+
+* line 58 & line 61
+    eq = self.assertEqual()
+    self.assertIs()
+    
+    為啥有些用 assertEqual 有些用 assertIs ?
+    Ans: 
+        eq: the two objects need not be of the same type, they merely need to be the same value.
+        is: the objects need to be the same object.
+        assertIs 較嚴格
+    
+* line 64
+    eq(parser.Get('two', 'one'), 'a string')
+    
+    此行 code 歸類在 # Test with type argument
+    但 argument 中卻沒有 type 
+    why?
+    
+    Ans: 猜測可能是 config.py 中 line 65
+         測試 type = None 時的狀況
 ```
