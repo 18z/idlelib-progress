@@ -115,4 +115,6 @@ print(cp.get('Theme', 'name'))
     Ans: config.py 中 IdleConfParser(ConfigParser)
          繼承函式 get。
          而 get 定義就是 (1, yes, true, on) 都會回傳 True。
+         
+* test_get 解讀完成
 ```
