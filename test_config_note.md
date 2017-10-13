@@ -106,4 +106,13 @@ print(cp.get('Theme', 'name'))
     
     Ans: 猜測可能是 config.py 中 line 65
          測試 type = None 時的狀況
+         
+* line 61 ~ 62
+    可看到最後的比較是跟 True 與 False 相比
+    然而，config 中 true false 皆是小寫。
+    why?
+    
+    Ans: config.py 中 IdleConfParser(ConfigParser)
+         繼承函式 get。
+         而 get 定義就是 (1, yes, true, on) 都會回傳 True。
 ```
