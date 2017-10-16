@@ -115,6 +115,19 @@ print(cp.get('Theme', 'name'))
     Ans: config.py 中 IdleConfParser(ConfigParser)
          繼承函式 get。
          而 get 定義就是 (1, yes, true, on) 都會回傳 True。
-         
+
+* line 63 
+    eq(parser.Get('one', 'three', type='int'), 10)
+    
+    檢查 config 內 option 值為 int 者是否符合。
+
+* line 64
+    eq(parser.Get('two', 'one'), 'a string')
+    
+    此處有趣，因註解寫 Test with type argument.
+    但此處明顯無 type argument。
+    
+    理解後，發現，測試很嚴謹，是針對 config.py 中 line 66 測試。
+
 * test_get 解讀完成
 ```
