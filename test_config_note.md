@@ -166,5 +166,7 @@ print(cp.get('Theme', 'name'))
     檢查 self.config 中的 section one, two 與不存在的 section。
     
 * test_get_option_list() 解讀完成
-    
+
+* line 84
+    test_load_nothing 解讀開始
 ```
