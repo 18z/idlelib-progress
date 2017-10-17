@@ -139,4 +139,32 @@ print(cp.get('Theme', 'name'))
     line 74 測試， return 的是 default = 'DEFAULT'。
 
 * test_get 解讀完成
+
+* 進入 test_get_option_list()
+    
+* line 77
+    parser = config.IdleConfParser('')
+    
+    parser 為 IdleConfParser 的 Instance。
+    其中 config.py line 48 註明，thi is currently '' when testing.
+    
+ * line 78
+    parser.read_string(self.config)
+    
+    該 instance 讀取 IdleConfParserTest class 中自定義的 config。
+    
+ * line 79
+    get_list = parser.GetOptionList
+    
+    讓 parser.GetOptionList 短一點，變成 get_list。
+    
+ * line 80 ~ 82
+    self.assertCountEqual(get_list('one'), ['one','two','three'])
+    self.assertCountEqual(get_list('one'), ['one','two','three'])
+    self.assertEqual(get_list('not exist'), [])
+    
+    檢查 self.config 中的 section one, two 與不存在的 section。
+    
+* test_get_option_list() 解讀完成
+    
 ```
