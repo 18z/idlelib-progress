@@ -128,6 +128,15 @@ print(cp.get('Theme', 'name'))
     但此處明顯無 type argument。
     
     理解後，發現，測試很嚴謹，是針對 config.py 中 line 66 測試。
+    
+* line 73, 74
+    self.assertIsNone(parser.Get('not', 'exist'))
+    eq(parser.Get('not', 'exist', default='DEFAULT'), 'DEAULT')
+
+    see config.py line 59, 60
+    若 default argument 無給值，則 return default 的 default value, none。
+    line 73 測試， return 的 default value 是 none。
+    line 74 測試， return 的是 default = 'DEFAULT'。
 
 * test_get 解讀完成
 ```
