@@ -169,4 +169,24 @@ print(cp.get('Theme', 'name'))
 
 * line 84
     test_load_nothing 解讀開始
+    
+* line 84
+    parser = config.IdleConfParser('')
+    
+    初始化 IdleConfParser 的 instance
+    '' 並無 config 檔餵入
+
+* line 85
+    parser.Load()
+    
+    config.py 中 line 75 定義 Ｌｏａｄ　ｆｕｎｃｔｉｏｎ
+
+* line 87
+    self.assertEqual(parser.sections(), [])
+    
+    sections() 是 conifgparser 的 function 
+    因為沒有 config 餵入，所以就抓不到 sections()
+    在此直覺判斷 ｓｅｃｔｉｏｎｓ（）　回傳的是　ｌｉｓｔ
+    
+
 ```
