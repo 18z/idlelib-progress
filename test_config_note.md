@@ -188,5 +188,11 @@ print(cp.get('Theme', 'name'))
     因為沒有 config 餵入，所以就抓不到 sections()
     在此直覺判斷 ｓｅｃｔｉｏｎｓ（）　回傳的是　ｌｉｓｔ
     
-
+* line 89 
+    test_load_file()
+    
+    測試有 config 檔下之 config 讀取
+    與 test_load_nothing() 之差別在
+    1. 使用 findfile() 尋找 config 檔路徑
+    2. line 95, 96 是真的抓的到值
 ```
