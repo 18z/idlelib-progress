@@ -195,4 +195,17 @@ print(cp.get('Theme', 'name'))
     與 test_load_nothing() 之差別在
     1. 使用 findfile() 尋找 config 檔路徑
     2. line 95, 96 是真的抓的到值
+    
+* 進入 IdleUserConfParserTest
+
+* line 102
+    def new_parser(self, path='')
+        return config.IdleUserConfParser(path)
+        
+    不曉得為何要用 new_parser ?
+    為了讓程式碼更簡潔？
+    為了不跟 IdleConfParser 混淆？
+    
+* line 
+    為了不跟 IdleConfParser 混淆？
 ```
