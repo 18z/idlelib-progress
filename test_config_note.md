@@ -206,6 +206,12 @@ print(cp.get('Theme', 'name'))
     為了讓程式碼更簡潔？
     為了不跟 IdleConfParser 混淆？
     
-* line 
-    為了不跟 IdleConfParser 混淆？
+* line 106, 107
+    parser = self.new_parser()
+    parser.add_section('Foo')
+    
+    初始化一個 IdleUserConfParser 的 instance，parser
+    接著使用 configparser 的 class method, add_section 新增 section 'Foo'
+    
+    
 ```
